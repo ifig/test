@@ -28,4 +28,6 @@ app.get('*', function(req, res){ //Page 404
 function Book(title, author) {
 }
 
-app.listen(8000);
+//app.listen(8000);
+
+app.listen(process.env.OPENSHIFT_NODEJS_PORT || 3000);
